@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		12DB13362677F4A300CC1E07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13352677F4A300CC1E07 /* AppDelegate.swift */; };
 		12DB13382677F4A300CC1E07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13372677F4A300CC1E07 /* SceneDelegate.swift */; };
-		12DB133A2677F4A300CC1E07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13392677F4A300CC1E07 /* ViewController.swift */; };
+		12DB133A2677F4A300CC1E07 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13392677F4A300CC1E07 /* MainVC.swift */; };
 		12DB133D2677F4A300CC1E07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB133B2677F4A300CC1E07 /* Main.storyboard */; };
 		12DB133F2677F4A600CC1E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DB133E2677F4A600CC1E07 /* Assets.xcassets */; };
 		12DB13422677F4A600CC1E07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB13402677F4A600CC1E07 /* LaunchScreen.storyboard */; };
+		12DB134A2677F70800CC1E07 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13492677F70800CC1E07 /* CurrencyCell.swift */; };
+		12DB134F2677F9A300CC1E07 /* MonthRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB134E2677F9A300CC1E07 /* MonthRate.swift */; };
+		12DB13512677F9DF00CC1E07 /* DayRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13502677F9DF00CC1E07 /* DayRate.swift */; };
+		12DB13542677FA6300CC1E07 /* DayRateParserXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13532677FA6300CC1E07 /* DayRateParserXML.swift */; };
+		12DB13562677FCD200CC1E07 /* MonthRateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13552677FCD200CC1E07 /* MonthRateParser.swift */; };
+		12DB13592678015E00CC1E07 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB13582678015E00CC1E07 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12DB13322677F4A300CC1E07 /* USD Rate Observer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USD Rate Observer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12DB13352677F4A300CC1E07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12DB13372677F4A300CC1E07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12DB13392677F4A300CC1E07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12DB13392677F4A300CC1E07 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		12DB133C2677F4A300CC1E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12DB133E2677F4A600CC1E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12DB13412677F4A600CC1E07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12DB13432677F4A600CC1E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DB13492677F70800CC1E07 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		12DB134E2677F9A300CC1E07 /* MonthRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthRate.swift; sourceTree = "<group>"; };
+		12DB13502677F9DF00CC1E07 /* DayRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRate.swift; sourceTree = "<group>"; };
+		12DB13532677FA6300CC1E07 /* DayRateParserXML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRateParserXML.swift; sourceTree = "<group>"; };
+		12DB13552677FCD200CC1E07 /* MonthRateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthRateParser.swift; sourceTree = "<group>"; };
+		12DB13582678015E00CC1E07 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,59 @@
 			children = (
 				12DB13352677F4A300CC1E07 /* AppDelegate.swift */,
 				12DB13372677F4A300CC1E07 /* SceneDelegate.swift */,
-				12DB13392677F4A300CC1E07 /* ViewController.swift */,
+				12DB13572678014500CC1E07 /* Notification */,
+				12DB13522677FA3D00CC1E07 /* Parser */,
+				12DB134D2677F81D00CC1E07 /* Model */,
+				12DB134B2677F7ED00CC1E07 /* View */,
+				12DB134C2677F7F900CC1E07 /* Controller */,
 				12DB133B2677F4A300CC1E07 /* Main.storyboard */,
 				12DB133E2677F4A600CC1E07 /* Assets.xcassets */,
 				12DB13402677F4A600CC1E07 /* LaunchScreen.storyboard */,
 				12DB13432677F4A600CC1E07 /* Info.plist */,
 			);
 			path = "USD Rate Observer";
+			sourceTree = "<group>";
+		};
+		12DB134B2677F7ED00CC1E07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12DB13492677F70800CC1E07 /* CurrencyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12DB134C2677F7F900CC1E07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12DB13392677F4A300CC1E07 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12DB134D2677F81D00CC1E07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12DB134E2677F9A300CC1E07 /* MonthRate.swift */,
+				12DB13502677F9DF00CC1E07 /* DayRate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12DB13522677FA3D00CC1E07 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				12DB13532677FA6300CC1E07 /* DayRateParserXML.swift */,
+				12DB13552677FCD200CC1E07 /* MonthRateParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		12DB13572678014500CC1E07 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				12DB13582678015E00CC1E07 /* Notification.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12DB133A2677F4A300CC1E07 /* ViewController.swift in Sources */,
+				12DB13512677F9DF00CC1E07 /* DayRate.swift in Sources */,
+				12DB13542677FA6300CC1E07 /* DayRateParserXML.swift in Sources */,
+				12DB13592678015E00CC1E07 /* Notification.swift in Sources */,
+				12DB134A2677F70800CC1E07 /* CurrencyCell.swift in Sources */,
+				12DB133A2677F4A300CC1E07 /* MainVC.swift in Sources */,
+				12DB134F2677F9A300CC1E07 /* MonthRate.swift in Sources */,
 				12DB13362677F4A300CC1E07 /* AppDelegate.swift in Sources */,
 				12DB13382677F4A300CC1E07 /* SceneDelegate.swift in Sources */,
+				12DB13562677FCD200CC1E07 /* MonthRateParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
